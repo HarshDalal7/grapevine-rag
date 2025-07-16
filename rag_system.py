@@ -1,7 +1,7 @@
-from google import genai
+import google.genai as genai
 import os
 from dotenv import load_dotenv
-from app.embeddings_manager import EmbeddingManager
+from embeddings_manager import EmbeddingManager
 
 load_dotenv()
 GEMMA_API_KEY = os.getenv("GEMMA_API_KEY")
